@@ -13,6 +13,7 @@ const SearchPage = lazy(() => import('./pages/SearchPage'))
 const AdminLoginPage = lazy(() => import('./pages/admin/LoginPage'))
 const AdminDashboard = lazy(() => import('./pages/admin/DashboardPage'))
 const AdminMoviesPage = lazy(() => import('./pages/admin/MoviesPage'))
+const ImportMoviePage = lazy(() => import('./pages/admin/ImportMoviePage'))
 const AdminMovieDetailPage = lazy(() => import('./pages/admin/MovieDetailPage'))
 const AdminPersonsPage = lazy(() => import('./pages/admin/PersonsPage'))
 const AdminSectionsPage = lazy(() => import('./pages/admin/SectionsPage'))
@@ -56,7 +57,7 @@ export default function App() {
                 {/* Admin Protected */}
                 <Route path="/admin" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
                 <Route path="/admin/movies" element={<ProtectedRoute><AdminMoviesPage /></ProtectedRoute>} />
-                <Route path="/admin/movies/import" element={<ProtectedRoute><AdminMoviesPage /></ProtectedRoute>} />
+                <Route path="/admin/movies/import" element={<ProtectedRoute><ImportMoviePage /></ProtectedRoute>} />
                 <Route path="/admin/movies/:id" element={<ProtectedRoute><AdminMovieDetailPage /></ProtectedRoute>} />
                 <Route path="/admin/persons" element={<ProtectedRoute><AdminPersonsPage /></ProtectedRoute>} />
                 <Route path="/admin/sections" element={<ProtectedRoute><AdminSectionsPage /></ProtectedRoute>} />
