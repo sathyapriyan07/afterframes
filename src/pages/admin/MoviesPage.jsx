@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
-import { Plus, Search, Trash2, Edit, Download, ExternalLink } from 'lucide-react'
+import { Plus, Search, Trash2, Edit, Download, ExternalLink, Film } from 'lucide-react'
 import toast from 'react-hot-toast'
 import { AdminLayout } from '../../layouts/AdminLayout'
 import { Modal } from '../../components/ui/Modal'
